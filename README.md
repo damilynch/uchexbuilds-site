@@ -2,49 +2,25 @@
 
 **Smart workflows. Seamless operations. Built for healthcare and business productivity.**
 
-UcheXBuilds designs practical digital tools, streamlined workflows and operational systems that help healthcare teams and businesses work more efficiently.
+Static HTML, CSS and vanilla JavaScript. No framework, package manager or build command is required. Cloudflare Pages publishes the repository root.
 
-## Website
-- Domain: https://uchexbuilds.site
-- Stack: HTML, CSS and vanilla JavaScript
+## Upgrade branch
+The website refresh is being prepared on `site-upgrade`. Do not merge it into `main` until the owner approves the preview.
+
+## Before enabling the waitlist or announcing launch
+- [x] Connect the waitlist form to the supplied Formspree endpoint. Submit a test and confirm delivery to `assist@uchexbuilds.site` before launch.
+- [ ] If desired, enable free Cloudflare Web Analytics and add the site token to the commented snippet in `index.html`.
+- [ ] Add the supplied founder portrait at `assets/images/founder-photo.jpg` and confirm the alt text. The source image is ready locally but has not yet been committed to this branch.
+- [ ] Review or replace `assets/images/og-image.svg` if a final sharing image is preferred.
+- [ ] Add the approved one-page `downloads/Patient-Intake-Checklist.pdf`; the existing checklist source was not present among the files available to this edit, so the download remains a placeholder until the correct PDF is added.
+- [ ] Edit the launch window in the sneak-peek section of `index.html`.
+- [ ] Replace the LinkedIn placeholder URL in `index.html`.
+- [ ] Review the privacy and terms drafts against actual services and applicable requirements.
+- [ ] Update the privacy notice with the selected form provider and retention details before collecting emails.
+
+## Safety and content boundaries
+All examples use fictional data. Do not commit patient information or PHI. The toolkit provides operational education only; it does not replace clinical judgement, legal advice, regulatory certification or an organisation's approved policies.
+
+## Deployment
 - Build command: none
-- Publish directory: repository root (/)
-
-## Project structure
-- `index.html` — public homepage
-- `css/style.css` — responsive styles
-- `js/main.js` — navigation interactions and footer year
-- `assets/icons/favicon.svg` — browser tab icon
-
-## Local preview
-Open `index.html` in a browser, or run:
-
-```bash
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## Cloudflare Pages deployment
-1. Open **Workers & Pages** in Cloudflare.
-2. Create a Pages project and connect this GitHub repository.
-3. Choose the `main` branch.
-4. Select **None** as the framework preset.
-5. Leave the build command blank.
-6. Set the build output directory to `/`.
-7. Deploy, then add `uchexbuilds.site` as a custom domain and follow the DNS instructions.
-
-## Brand palette
-- Deep teal: `#264653`
-- Sea green: `#2A9D8F`
-- Coral: `#E76F51`
-- Soft background: `#F7FAF8`
-- Pale aqua: `#A8DADC`
-
-## Content and privacy
-UcheXBuilds resources support operational education and workflow organisation. They are not a substitute for clinical judgement, legal advice, regulatory certification or an organisation's approved policies.
-
-Do not commit real patient information, protected health information (PHI), passwords, API keys, payment credentials or other confidential information to this public repository. Use fictional examples in demonstrations and product previews.
-
-## Current release
-The homepage introduces UcheXBuilds' healthcare administration, business productivity and workflow improvement focus. The Remote Healthcare Operations Hub is presented as in development. Contact details are intentionally omitted until the official mailbox is active.
+- Output directory: repository root (`/`)

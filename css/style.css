@@ -12,3 +12,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #e982
 @media(max-width:420px){.preview-card{padding:16px}.preview-card-head{font-size:8px;letter-spacing:.5px}.launch-strip{padding:18px}.lead-magnet{padding:20px}}
 @media(max-width:360px){.wrap{width:calc(100% - 28px)}.hero-copy h1{font-size:38px;letter-spacing:-1.5px}.pill{font-size:8px;letter-spacing:.5px}.hero-art{height:350px}.dashboard{padding:17px}.dashboard h3{font-size:17px}.hub-steps{gap:7px}.hub-steps b{font-size:7px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+.founder-photo{overflow:hidden;padding:0;border:0;background:#e5efe4}.founder-photo img{display:block;width:100%;height:100%;min-height:370px;object-fit:cover;object-position:center 35%;border-radius:24px}.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:700px){.founder-photo img{min-height:300px}}

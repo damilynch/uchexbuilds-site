@@ -235,3 +235,36 @@ button:disabled{opacity:.6;cursor:not-allowed}
  *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
  .reveal{opacity:1;transform:none}
 }
+/* Editorial philosophy and exposed focus index */
+.philosophy-grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,6vw,84px);align-items:start}
+.philosophy-grid>aside{position:sticky;top:108px}
+.principles{padding:0;margin:26px 0 0;list-style:none;border-top:var(--border-hairline)}
+.principles li{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:13px 0;border-bottom:var(--border-hairline);font-size:.8rem}
+.principles b{font:500 .68rem var(--font-mono);color:var(--accent-primary)}
+.philosophy-copy h2{max-width:15ch;font-size:clamp(2.3rem,4vw,4rem);margin-bottom:30px}
+.philosophy-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.philosophy-columns p{font-size:.93rem;margin:0}
+.focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(17,19,18,.16);border:1px solid rgba(17,19,18,.16)}
+.focus-grid article{position:relative;min-height:340px;padding:28px;background:var(--bg-canvas);border-top:3px solid transparent;transition:background .35s var(--ease),border-color .35s var(--ease)}
+.focus-grid article:hover{background:var(--bg-elevated);border-top-color:var(--accent-primary)}
+.focus-meta{font:500 .68rem var(--font-mono);letter-spacing:.07em;color:var(--accent-primary);padding-bottom:20px;border-bottom:var(--border-hairline)}
+.focus-grid h3{margin:28px 0 12px;max-width:15ch}
+.focus-grid p{font-size:.88rem}
+.focus-grid ul{list-style:none;padding:0;margin:25px 0 0}
+.focus-grid li{padding:9px 0;border-top:var(--border-hairline);font-size:.76rem;color:var(--ink-secondary)}
+.focus-grid li:before{content:"—";color:var(--accent-primary);margin-right:10px}
+.blueprint-flow{display:grid;grid-template-columns:1fr;gap:0;margin:35px 0}
+.blueprint-module{display:grid;grid-template-columns:100px 1fr auto;align-items:center;gap:12px;padding:15px 14px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.035)}
+.blueprint-module span,.blueprint-module i{font:500 .6rem var(--font-mono);font-style:normal;color:#b7d7c0}
+.blueprint-module b{font-size:.95rem;letter-spacing:.05em}
+.blueprint-module small{grid-column:2;color:#bdc9c0;font-size:.72rem}
+.blueprint-connector{height:14px;width:1px;background:#78a889;margin-left:27px}
+@media(max-width:767px){
+ .philosophy-grid{grid-template-columns:1fr;gap:30px}
+ .philosophy-grid>aside{position:static}
+ .philosophy-columns{grid-template-columns:1fr;gap:12px}
+ .focus-grid{grid-template-columns:1fr}
+ .focus-grid article{min-height:0;padding:23px}
+ .blueprint-module{grid-template-columns:76px 1fr}
+ .blueprint-module i{grid-column:2}
+}

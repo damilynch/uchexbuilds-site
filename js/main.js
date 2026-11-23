@@ -15,13 +15,4 @@ if(button&&menu){
 }
 const year=document.querySelector("#year");
 if(year) year.textContent=new Date().getFullYear();
-// The PDF link is intentionally a placeholder until the approved checklist file is added.
-const download=document.querySelector("[data-placeholder-download]");
-if(download){
-  download.addEventListener("click",event=>{
-    if(download.getAttribute("href")==="downloads/Patient-Intake-Checklist.pdf"){
-      event.preventDefault();
-      alert("The Patient Intake Checklist PDF is being prepared. Please check back soon.");
-    }
-  });
-}
+// The checklist PDF is now present in /downloads and is linked directly from the page.
